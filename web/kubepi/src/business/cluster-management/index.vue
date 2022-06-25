@@ -6,7 +6,7 @@
     </div>
     <complex-table v-loading="loading" :search-config="searchConfig" :selects.sync="selects" :data="data"
                    :pagination-config="paginationConfig" @search="search"
-                   element-loading-background="rgba(0, 0, 0, 0.8)">
+                   element-loading-background="rgba(255, 255, 255, 0.8)">
       <el-table-column type="selection" fix></el-table-column>
       <el-table-column :label="$t('commons.table.status')" min-width="80px" fix>
         <template v-slot:default="{row}">

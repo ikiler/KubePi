@@ -24,9 +24,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~@/styles/common/variables.scss";
   .sidebar-toggle-button.el-button {
     font-size: 18px;
-    background-color: #1c1e20;
+    background-color: $--color-bg-primary;
     color: #3884c5;
   }
 

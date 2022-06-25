@@ -164,6 +164,7 @@ export default {
       this.$refs[form].validate((valid) => {
         if (valid) {
           this.loading = true
+
           this.$store.dispatch("user/login", this.form).then((res) => {
             const user = res.data
             this.user.secret = user.mfa.secret

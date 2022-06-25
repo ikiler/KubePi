@@ -40,7 +40,7 @@ export default {
   .content-container {
     transition: 0.3s;
     color: white;
-    background-color: #222629;
+    background-color: $layout-container-bg-color;
     overflow: auto;
     height: 100%;
     padding: 20px;
@@ -51,7 +51,7 @@ export default {
     .content-container__header {
       line-height: 60px;
       font-size: 18px;
-      color: #FFFFFF;
+      color: $--color-text-primary;
     }
 
     .content-container__toolbar {

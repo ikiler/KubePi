@@ -152,7 +152,7 @@
     width: 200px;
     box-sizing: border-box;
     color: $--button-default-font-color;
-    background-color: #232529;
+    background-color: $ko-search-bar-condition-bgColor;
 
     &:focus {
       outline: none;
