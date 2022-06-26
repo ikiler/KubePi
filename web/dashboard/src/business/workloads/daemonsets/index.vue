@@ -11,7 +11,7 @@
         {{ $t("commons.button.delete") }}
       </el-button>
     </div>
-    <complex-table :selects.sync="selects" :data="data" v-loading="loading" :pagination-config="paginationConfig" :search-config="searchConfig" @search="search">
+    <complex-table :selects.sync="selects" :data="data" v-loading="loading" element-loading-background="rgba(255, 255, 255, 0.8)" :pagination-config="paginationConfig" :search-config="searchConfig" @search="search">
       <el-table-column type="selection" fix></el-table-column>
       <el-table-column :label="$t('commons.table.name')" prop="name" min-width="120" show-overflow-tooltip>
         <template v-slot:default="{row}">
@@ -31,7 +31,7 @@
     </complex-table>
 
     <el-dialog :title="$t('commons.button.scale')" width="70%" :close-on-click-modal="false" :visible.sync="dialogModifyVersionVisible">
-      <complex-table :data="form.imagesData" v-loading="loading">
+      <complex-table :data="form.imagesData" v-loading="loading" element-loading-background="rgba(255, 255, 255, 0.8)">
         <el-table-column :label="$t('business.workload.container_type')" prop="type" min-width="10" />
         <el-table-column :label="$t('business.workload.name')" prop="name" min-width="20" show-overflow-tooltip />
         <el-table-column :label="$t('business.workload.container_image')" prop="image" min-width="40" show-overflow-tooltip />

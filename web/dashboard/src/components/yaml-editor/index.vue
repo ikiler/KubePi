@@ -70,7 +70,7 @@ export default {
       options: {
         value: "",
         mode: "yaml",
-        theme: "ayu-dark",
+        theme: "yeti",
         lineNumbers: true,
         tabSize: 4,
         foldGutter: true,

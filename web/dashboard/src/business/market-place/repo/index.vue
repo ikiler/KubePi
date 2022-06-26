@@ -7,7 +7,7 @@
         {{ $t("commons.button.add") }}
       </el-button>
     </div>
-    <complex-table v-loading="loading" :selects.sync="selects" :data="data"
+    <complex-table v-loading="loading" :selects.sync="selects" :data="data" element-loading-background="rgba(255, 255, 255, 0.8)"
                    @search="search">
       <el-table-column :label="$t('commons.table.name')" prop="name" min-width="80" fix>
         <template v-slot:default="{row}">

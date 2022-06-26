@@ -43,19 +43,16 @@ export default {
 
   .content-container {
     transition: 0.3s;
-    color: white;
-    background-color: #222629;
+    color: $--color-text-primary;
+    background-color: $--color-bg-primary;
     overflow: auto;
     height: 100%;
     padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14);
-    box-sizing: border-box;
 
     .content-container__header {
       line-height: 60px;
       font-size: 18px;
-      color: #FFFFFF;
+      color: $--color-text-primary;
     }
 
     .content-container__toolbar {

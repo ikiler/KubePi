@@ -2,7 +2,7 @@
   <layout-content :header="$t('business.dashboard.dashboard')">
     <el-row :gutter="24" class="row-box">
       <el-col :span="24">
-        <el-card v-if="cluster" class="el-card" shadow="always" style="background-color: #243441;height: 120px">
+        <el-card v-if="cluster" class="el-card" shadow="always" style="height: 120px">
           <el-row :gutter="24">
             <el-col :span="8">
               <span class="title">{{ $t("commons.table.name") }}</span>
@@ -38,13 +38,13 @@
 
     <el-row :gutter="20" v-if="hasMetric === 'true'">
       <el-col :span="12">
-        <el-card style="background-color: #212e38" class="n-card el-card">
+        <el-card  class="n-card el-card">
           <span>CPU(core) {{clusterInfo.metricCpu}} / {{clusterInfo.allocatCpu}}</span>
           <el-progress style="margin-top: 20px" :stroke-width="20" :percentage="clusterInfo.cpuPercent"></el-progress>
         </el-card>
       </el-col>
       <el-col :span="12">
-        <el-card style="background-color: #212e38" class="n-card el-card">
+        <el-card  class="n-card el-card">
           <span>Memory(Gi) {{clusterInfo.metricMemory}} / {{clusterInfo.allocatMemory}}</span>
           <el-progress style="margin-top: 20px" :stroke-width="20" :percentage="clusterInfo.memoryPercent"></el-progress>
         </el-card>
@@ -78,7 +78,7 @@
     </el-row>
     <el-row :gutter="24" v-has-permissions="{apiGroup:'',resource:'events',verb:'list'}">
       <h4 style="margin-left: 10px;float: left">{{$t('business.event.event')}}</h4>
-      <complex-table style="margin-top:20px" :data="events" @search="search" v-loading="loading" :pagination-config="paginationConfig"
+      <complex-table style="margin-top:20px" :data="events" @search="search" element-loading-background="rgba(255, 255, 255, 0.8)" v-loading="loading" :pagination-config="paginationConfig"
                      :search-config="searchConfig">
         <el-table-column :label="$t('business.event.reason')" prop="reason" fix max-width="50px">
           <template v-slot:default="{row}">
@@ -387,12 +387,13 @@ export default {
 </script>
 
 <style scoped>
+
 .line {
   float: left;
   margin-top: 10px;
   width: 1px;
   height: 80px;
-  background: #3884c5;
+  background: #a19f9d;
 }
 
 .title {
@@ -402,13 +403,11 @@ export default {
 
 .d-card {
   height: 90px;
-  background-color: #1d3e4d;
   margin-top: 10px;
 }
 
 .n-card {
   height: 100px;
-  background-color: #1d3e4d;
   margin-top: 10px;
   border: none;
 }

@@ -1,5 +1,5 @@
 /* Element 变量 */
-$--color-primary: #88abda;
+$--color-primary: #409eff;
 $--color-success: #87CB16;
 $--color-warning: #FFA534;
 $--color-danger: #FB404B;
@@ -14,8 +14,9 @@ $--color-bg-primary: #fff;
 
 /* layout */
 $layout-bg-color: #edf1f7;
-$layout-container-color: #000; // 菜单激活时项字体颜色
-$layout-container-bg-color: #fff; // 菜单激活时项字体颜色
+$layout-container-color: #000;
+$layout-container-bg-color: #fff;
+$layout-card-bg-color: #fff;
 
 
 /* sidebar */
@@ -36,9 +37,9 @@ $menu-active-bg-color: $--color-primary; // 菜单项激活时背景
 $submenu-height: 40px; // 子菜单项高度
 $submenu-bg-color-hover: mix($menu-open-bg-color, #000, 80%); // 子菜单项hover背景
 $submenu-active-color: $menu-active-color; // 子菜单项激活时颜色
-$submenu-active-bg-color: $menu-open-bg-color; // 子菜单项激活时背景
+$submenu-active-bg-color: #E5E3E2; // 子菜单项激活时背景
 
-$menu-active-prefix-color: #deecf9; // 菜单激活前缀颜色
+$menu-active-prefix-color: #A5A3A2; // 菜单激活前缀颜色
 $menu-active-prefix-width: 4px; // 菜单激活前缀宽度
 
 /* logo */

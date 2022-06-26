@@ -17,7 +17,7 @@
         {{ $t("commons.button.delete") }}
       </el-button>
     </div>
-    <complex-table :data="data" :selects.sync="selects" @search="search" v-loading="loading"
+    <complex-table :data="data" :selects.sync="selects" @search="search" v-loading="loading" element-loading-background="rgba(255, 255, 255, 0.8)"
                    :pagination-config="paginationConfig" :search-config="searchConfig">
       <el-table-column type="selection" fix></el-table-column>
       <el-table-column :label="$t('commons.table.name')" prop="metadata.name" show-overflow-tooltip>

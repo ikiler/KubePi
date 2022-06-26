@@ -1,5 +1,5 @@
 <template>
-  <layout-content header="Namespaces" v-loading="loading">
+  <layout-content header="Namespaces" >
     <div style="float: left">
       <el-button v-has-permissions="{scope:'cluster',apiGroup:'',resource:'namespaces',verb:'create'}"
                    type="primary" size="small"
@@ -17,7 +17,7 @@
           {{ $t("commons.button.delete") }}
         </el-button>
     </div>
-    <complex-table :selects.sync="selects" :pagination-config="paginationConfig" :search-config="searchConfig"
+    <complex-table :selects.sync="selects" :pagination-config="paginationConfig" v-loading="loading" element-loading-background="rgba(255, 255, 255, 0.8)" :search-config="searchConfig"
                    :data="data" @search="search">
       <el-table-column type="selection" fix></el-table-column>
       <el-table-column :label="$t('commons.table.name')" prop="metadata.name" show-overflow-tooltip fix>

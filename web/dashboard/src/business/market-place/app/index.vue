@@ -6,7 +6,7 @@
         {{ $t("commons.button.delete") }}
       </el-button>
     </div>
-    <complex-table v-loading="loading" :data="data" :search-config="searchConfig" :selects.sync="selects"
+    <complex-table v-loading="loading" :data="data" :search-config="searchConfig" :selects.sync="selects" element-loading-background="rgba(255, 255, 255, 0.8)"
                    :pagination-config="paginationConfig"
                    @search="search">
       <el-table-column type="selection" fix></el-table-column>

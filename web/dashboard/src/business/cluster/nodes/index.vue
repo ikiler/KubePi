@@ -17,7 +17,7 @@
           {{$t('business.node.drain')}}
         </el-button>
     </div>
-    <complex-table :data="data" v-loading="loading" :selects.sync="selects" :pagination-config="paginationConfig" @search="search"
+    <complex-table :data="data" v-loading="loading" :selects.sync="selects" element-loading-background="rgba(255, 255, 255, 0.8)" :pagination-config="paginationConfig" @search="search"
                    :search-config="searchConfig">
       <el-table-column type="selection" fix></el-table-column>
       <el-table-column :label="$t('commons.table.name')" prop="metadata.name" fix show-overflow-tooltip max-width="30px">

@@ -1,6 +1,6 @@
 <template>
   <layout-content header="Events">
-    <complex-table :data="data" @search="search" v-loading="loading" :pagination-config="paginationConfig"
+    <complex-table :data="data" @search="search" element-loading-background="rgba(255, 255, 255, 0.8)" v-loading="loading" :pagination-config="paginationConfig"
                    :search-config="searchConfig">
       <template #toolbar>
       </template>

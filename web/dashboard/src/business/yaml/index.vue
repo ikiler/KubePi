@@ -5,7 +5,7 @@
     </div>
     <div style="float: right;margin-top: 10px">
       <el-button @click="onCancel()">{{ $t("commons.button.cancel") }}</el-button>
-      <el-button v-loading="loading" @click="onSubmit" type="primary">
+      <el-button v-loading="loading" element-loading-background="rgba(255, 255, 255, 0.8)" @click="onSubmit" type="primary">
         {{ $t("commons.button.submit") }}
       </el-button>
     </div>
